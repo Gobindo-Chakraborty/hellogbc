@@ -1,4 +1,5 @@
 import Image from "next/image";
+import gbcImage from "@/public/assets/images/gbc.jpg";
 
 export default function WIP() {
   return (
@@ -6,7 +7,7 @@ export default function WIP() {
       <div className="inline-flex gap-2 border pl-2.5 pr-3 py-2 rounded-3xl border-wip-border bg-wip-bg">
         <Image
           className="w-5 h-5 rounded-2xl"
-          src="/gbc.jpg"
+          src={gbcImage}
           alt="GBC image"
           width={20}
           height={20}

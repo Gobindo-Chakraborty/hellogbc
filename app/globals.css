@@ -5,8 +5,13 @@
   --color-primary-bg: #030509;
   --color-secondary-bg: #000000;
 
+  --color-secondary-bg-light-1: #484848;
+
   --color-primary-text: #dddddd;
-  --color-secondary-text: #9a9a9a;
+  --color-secondary-text: #7f7f7f;
+  --color-secondary-text-light-2: #9a9a9a;
+
+  --color-completion-status: #80a857;
 
   /* Fonts */
   --font-inter: var(--font-inter);
