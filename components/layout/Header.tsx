@@ -51,7 +51,7 @@ export default function Header() {
 
       <nav className="z-10">
         <div
-          className={`absolute top-0 left-0 flex bg-secondary-bg/60 w-full h-auto  justify-center border-b border-completion-status ${open ? "translate-y-0 opacity-100" : "-translate-y-full opacity-0"} transition-all duration-300 ease-out backdrop-blur-xl`}
+          className={`absolute top-0 left-0 flex bg-secondary-bg/60 w-full h-auto  justify-center border-b border-completion-status ${open ? "translate-y-0 duration-300" : "-translate-y-full  duration-600"} transition-all ease-out backdrop-blur-xl`}
         >
           <ul className="mt-25 mb-12 list-none flex flex-col items-center gap-10 text-secondary-text">
             <li className="font-bold text-primary-text">
