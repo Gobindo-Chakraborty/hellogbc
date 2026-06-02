@@ -9,40 +9,40 @@ export default function Header() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="w-full relative">
-      <div className="w-full bg-secondary-bg relative z-50">
-        <div className="container flex justify-between mx-auto py-3 w-11/12">
+    <header className="relative w-full">
+      <div className="bg-secondary-bg relative z-50 w-full">
+        <div className="mx-auto flex w-11/12 max-w-316.25 items-center justify-between py-3 md:py-4.5">
           <Link className="" href="/" aria-label="Home">
-            <Logo className="w-4 h-auto" />
+            <Logo className="xs:w-4.75 h-auto w-4" />
           </Link>
-          <div className="flex gap-9.5 items-center">
+          <div className="flex items-center gap-9.5">
             <button
-              className="cursor-pointer "
+              className="cursor-pointer"
               type="button"
               aria-label="Toggle theme"
             >
-              <Sun className="w-4.25 h-4.25 text-secondary-text" />
+              <Sun className="text-secondary-text xs:h-5 xs:w-5 h-4.25 w-4.25" />
             </button>
             <button
               type="button"
-              className="cursor-pointer py-1.5 px-3.25 border border-secondary-bg-light-1 rounded-full text-xs font-bold "
+              className="border-secondary-bg-light-1 xs:px-4 xs:py-2 xs:text-base cursor-pointer rounded-full border px-3.25 py-1.5 text-xs leading-none font-bold"
             >
               Contact me
             </button>
             <button
-              className="flex flex-col gap-1 cursor-pointer "
+              className="xs:gap-1.5 flex cursor-pointer flex-col gap-1 md:hidden"
               type="button"
               aria-label="Toggle navigation"
               onClick={() => setOpen(!open)}
             >
               <span
-                className={`w-5 h-0.75 bg-primary-text rounded-full transition-all duration-300 ${open ? "rotate-45 translate-y-1.75" : ""}`}
+                className={`bg-primary-text h-0.75 w-5 rounded-full transition-all duration-300 ${open ? "xs:translate-y-2.25 translate-y-1.75 rotate-45" : ""} xs:w-6`}
               ></span>
               <span
-                className={`w-5 h-0.75 bg-primary-text rounded-full transition-all duration-200 ${open ? "opacity-0" : "opacity-100"}`}
+                className={`bg-primary-text h-0.75 w-5 rounded-full transition-all duration-200 ${open ? "opacity-0" : "opacity-100"} xs:w-6`}
               ></span>
               <span
-                className={`w-5 h-0.75 bg-primary-text rounded-full transition-all duration-300 ${open ? "-rotate-45 -translate-y-1.75" : ""}`}
+                className={`bg-primary-text h-0.75 w-5 rounded-full transition-all duration-300 ${open ? "xs:-translate-y-2.25 -translate-y-1.75 -rotate-45" : ""} xs:w-6`}
               ></span>
             </button>
           </div>
@@ -50,10 +50,10 @@ export default function Header() {
       </div>
 
       <nav
-        className={`absolute top-0 left-0 flex bg-secondary-bg/60 w-full h-auto  justify-center border-b border-completion-status ${open ? "translate-y-0 duration-300" : "-translate-y-full  duration-600"} transition-all ease-out backdrop-blur-xl z-20`}
+        className={`bg-secondary-bg/60 border-completion-status absolute top-0 left-0 flex h-auto w-full justify-center border-b ${open ? "translate-y-0 duration-300" : "-translate-y-full duration-600"} z-20 backdrop-blur-xl transition-all ease-out md:fixed md:top-6 md:left-1/2 md:z-70 md:w-fit md:-translate-x-2/3 md:translate-y-0 md:border-0 md:bg-transparent md:backdrop-blur-none md:transition-none min-[52rem]:-translate-x-1/2`}
       >
-        <ul className="mt-25 mb-12 list-none flex flex-col items-center gap-10 text-secondary-text">
-          <li className="font-bold text-primary-text">
+        <ul className="text-secondary-text mt-25 mb-12 flex list-none flex-col items-center gap-10 text-base md:mt-0 md:mb-0 md:flex-row">
+          <li className="text-primary-text font-bold">
             <Link
               href="#"
               onClick={() => {

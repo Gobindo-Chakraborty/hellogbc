@@ -16,6 +16,9 @@
   /* Fonts */
   --font-inter: var(--font-inter);
 
+  /* Breakpoints */
+  --breakpoint-xs: 23rem;
+
   /* WIP - Work In Progress */
   --color-wip-text: hsl(225, 25%, 81%);
   --color-wip-border: hsl(233, 20%, 36%);
