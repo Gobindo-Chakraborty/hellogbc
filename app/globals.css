@@ -7,11 +7,16 @@
 
   --color-secondary-bg-light-1: #484848;
 
+  --color-secondary-bg-dark-1: #151a22;
+
   --color-primary-text: #dddddd;
   --color-secondary-text: #7f7f7f;
   --color-secondary-text-light-2: #9a9a9a;
 
   --color-completion-status: #80a857;
+  --color-live-view: #a85757;
+
+  --color-heading-1: #5790a8;
 
   /* Fonts */
   --font-inter: var(--font-inter);
