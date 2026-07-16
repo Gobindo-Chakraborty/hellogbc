@@ -4,9 +4,13 @@ import Logo from "../icons/Logo";
 import Link from "next/link";
 import Sun from "../icons/Sun";
 import { useState } from "react";
+import { usePathname } from "next/navigation";
 
 export default function Header() {
   const [open, setOpen] = useState(false);
+  const pathname = usePathname();
+
+  const isContactPage = pathname === "/contact";
 
   return (
     <header className="relative w-full">
@@ -23,12 +27,12 @@ export default function Header() {
             >
               <Sun className="text-secondary-text xs:h-5 xs:w-5 h-4.25 w-4.25" />
             </button>
-            <button
-              type="button"
+            <Link
+              href={isContactPage ? "/" : "/contact"}
               className="border-secondary-bg-light-1 xs:px-4 xs:py-2 xs:text-base cursor-pointer rounded-full border px-3.25 py-1.5 text-xs leading-none font-bold"
             >
-              Contact me
-            </button>
+              {isContactPage ? "Go Home" : "Contact me"}
+            </Link>
             <button
               className="xs:gap-1.5 flex cursor-pointer flex-col gap-1 md:hidden"
               type="button"
