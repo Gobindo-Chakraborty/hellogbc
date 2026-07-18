@@ -13,7 +13,7 @@ export default function Header() {
   const isContactPage = pathname === "/contact";
 
   return (
-    <header className="relative w-full">
+    <header className="fixed z-100 w-full">
       <div className="bg-secondary-bg relative z-50 w-full">
         <div className="mx-auto flex w-11/12 max-w-316.25 items-center justify-between py-3 md:py-4.5">
           <Link className="" href="/" aria-label="Home">
@@ -25,11 +25,11 @@ export default function Header() {
               type="button"
               aria-label="Toggle theme"
             >
-              <Sun className="text-secondary-text xs:h-5 xs:w-5 h-4.25 w-4.25" />
+              <Sun className="text-secondary-text xs:h-5 xs:w-5 hover:text-primary-text h-4.25 w-4.25 transition-colors" />
             </button>
             <Link
               href={isContactPage ? "/" : "/contact"}
-              className="border-secondary-bg-light-1 xs:px-4 xs:py-2 xs:text-base cursor-pointer rounded-full border px-3.25 py-1.5 text-xs leading-none font-bold"
+              className="border-secondary-bg-light-1 xs:px-4 xs:py-2 xs:text-base hover:bg-secondary-bg-dark-1 cursor-pointer rounded-full border px-3.25 py-1.5 text-xs leading-none font-bold transition-colors"
             >
               {isContactPage ? "Go Home" : "Contact me"}
             </Link>
@@ -57,9 +57,9 @@ export default function Header() {
         className={`bg-secondary-bg/60 border-completion-status absolute top-0 left-0 flex h-auto w-full justify-center border-b ${open ? "translate-y-0 duration-300" : "-translate-y-full duration-600"} z-20 backdrop-blur-xl transition-all ease-out md:fixed md:top-6 md:left-1/2 md:z-70 md:w-fit md:-translate-x-2/3 md:translate-y-0 md:border-0 md:bg-transparent md:backdrop-blur-none md:transition-none min-[52rem]:-translate-x-1/2`}
       >
         <ul className="text-secondary-text mt-25 mb-12 flex list-none flex-col items-center gap-10 text-base md:mt-0 md:mb-0 md:flex-row">
-          <li className="text-primary-text font-bold">
+          <li className="text-primary-text hover:text-primary-text font-bold transition-colors">
             <Link
-              href="#"
+              href="#home"
               onClick={() => {
                 setOpen(false);
               }}
@@ -67,7 +67,7 @@ export default function Header() {
               Home
             </Link>
           </li>
-          <li>
+          <li className="hover:text-primary-text transition-colors">
             <Link
               href="#"
               onClick={() => {
@@ -77,7 +77,7 @@ export default function Header() {
               Projects
             </Link>
           </li>
-          <li>
+          <li className="hover:text-primary-text transition-colors">
             <Link
               href="#"
               onClick={() => {
@@ -87,7 +87,7 @@ export default function Header() {
               About
             </Link>
           </li>
-          <li>
+          <li className="hover:text-primary-text transition-colors">
             <Link
               href="#"
               onClick={() => {
