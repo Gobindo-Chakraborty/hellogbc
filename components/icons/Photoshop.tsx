@@ -8,7 +8,7 @@ export default function Photoshop({ className }: { className: string }) {
       xmlns="http://www.w3.org/2000/svg"
       className={className}
     >
-      <g clip-path="url(#clip0_66_303)">
+      <g clipPath="url(#clip0_66_303)">
         <path
           d="M19.1816 0H3.81836C1.70954 0 0 1.75057 0 3.91V19.0532C0 21.2126 1.70954 22.9632 3.81836 22.9632H19.1816C21.2905 22.9632 23 21.2126 23 19.0532V3.91C23 1.75057 21.2905 0 19.1816 0Z"
           fill="#001E36"

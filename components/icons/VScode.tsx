@@ -8,10 +8,10 @@ export default function VScode({ className }: { className: string }) {
       xmlns="http://www.w3.org/2000/svg"
       className={className}
     >
-      <g clip-path="url(#clip0_66_314)">
+      <g clipPath="url(#clip0_66_314)">
         <mask
           id="mask0_66_314"
-          style="mask-type:alpha"
+          style={{ maskType: "alpha" }}
           maskUnits="userSpaceOnUse"
           x="0"
           y="0"
@@ -19,8 +19,8 @@ export default function VScode({ className }: { className: string }) {
           height="23"
         >
           <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
+            fillRule="evenodd"
+            clipRule="evenodd"
             d="M16.3097 22.8429C16.4927 22.9142 16.6885 22.9471 16.8848 22.9396C17.0811 22.9321 17.2737 22.8842 17.4507 22.799L22.186 20.5204C22.4299 20.403 22.6356 20.2192 22.7796 19.99C22.9236 19.7609 23 19.4957 23 19.2251V3.77499C23.0001 3.50431 22.9237 3.23912 22.7797 3.00992C22.6357 2.78073 22.4299 2.59685 22.186 2.47944L17.4507 0.201184C17.1831 0.072439 16.8822 0.03005 16.5894 0.0798838C16.2967 0.129717 16.0267 0.26931 15.8168 0.47934L6.75158 8.74964L2.80313 5.75227C2.62499 5.6171 2.40516 5.54852 2.18176 5.55844C1.95836 5.56835 1.74547 5.65612 1.58 5.80654L0.313558 6.95851C0.214864 7.04828 0.135993 7.15765 0.0819901 7.27964C0.0279869 7.40163 4.07198e-05 7.53355 -6.07578e-05 7.66696C-0.000162235 7.80037 0.0275832 7.93233 0.0814008 8.0544C0.135218 8.17648 0.213923 8.28597 0.31248 8.37589L3.73678 11.4999L0.31266 14.6242C0.214156 14.7141 0.135499 14.8236 0.0817147 14.9456C0.0279306 15.0677 0.000203153 15.1996 0.00030462 15.333C0.000406087 15.4664 0.0283343 15.5983 0.082304 15.7202C0.136274 15.8422 0.215098 15.9516 0.313738 16.0414L1.58018 17.1933C1.74563 17.3438 1.9585 17.4316 2.18191 17.4415C2.40531 17.4515 2.62514 17.3829 2.80331 17.2478L6.75176 14.2506L15.817 22.5207C15.9573 22.661 16.1249 22.7707 16.3097 22.8429ZM17.2534 6.27875L10.3752 11.4999L17.2536 16.7213L17.2534 6.27875Z"
             fill="white"
           />
@@ -44,8 +44,8 @@ export default function VScode({ className }: { className: string }) {
           </g>
           <path
             opacity="0.25"
-            fill-rule="evenodd"
-            clip-rule="evenodd"
+            fillRule="evenodd"
+            clipRule="evenodd"
             d="M16.2959 22.8429C16.4789 22.9142 16.6746 22.9471 16.8708 22.9396C17.0671 22.932 17.2597 22.8842 17.4367 22.799L22.172 20.5204C22.4159 20.403 22.6217 20.2191 22.7657 19.9899C22.9097 19.7608 22.9861 19.4956 22.986 19.2249V3.77499C22.9861 3.50431 22.9097 3.23912 22.7657 3.00992C22.6217 2.78073 22.4159 2.59685 22.172 2.47944L17.4367 0.201184C17.1691 0.072439 16.8682 0.03005 16.5754 0.0798838C16.2827 0.129717 16.0127 0.26931 15.8028 0.47934L6.73758 8.74964L2.78913 5.75245C2.61098 5.61728 2.39116 5.5487 2.16776 5.55862C1.94435 5.56853 1.73146 5.6563 1.56599 5.80672L0.299555 6.95869C0.200886 7.04847 0.122037 7.15785 0.0680496 7.27984C0.0140622 7.40183 -0.0138753 7.53374 -0.0139768 7.66714C-0.0140782 7.80054 0.0136586 7.9325 0.0674603 8.05457C0.121262 8.17664 0.199944 8.28614 0.298477 8.37607L3.72278 11.4999L0.298656 14.624C0.2001 14.7139 0.121395 14.8234 0.0675773 14.9455C0.0137598 15.0675 -0.0139857 15.1995 -0.0138842 15.3329C-0.0137827 15.4663 0.0141635 15.5982 0.0681667 15.7202C0.12217 15.8422 0.201041 15.9516 0.299735 16.0414L1.56617 17.1933C1.73162 17.3438 1.9445 17.4316 2.1679 17.4415C2.3913 17.4515 2.61114 17.3829 2.7893 17.2478L6.73794 14.2504L15.8032 22.5207C15.9434 22.6609 16.1112 22.7706 16.2959 22.8429ZM17.2396 6.27858L10.3612 11.4999L17.2396 16.7211V6.27858Z"
             fill="url(#paint0_linear_66_314)"
           />
@@ -59,9 +59,9 @@ export default function VScode({ className }: { className: string }) {
           width="25.0975"
           height="19.4668"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -93,9 +93,9 @@ export default function VScode({ className }: { className: string }) {
           width="9.271"
           height="24.9648"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -128,8 +128,8 @@ export default function VScode({ className }: { className: string }) {
           y2="22.9406"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="white" />
-          <stop offset="1" stop-color="white" stop-opacity="0" />
+          <stop stopColor="white" />
+          <stop offset="1" stopColor="white" stopOpacity="0" />
         </linearGradient>
         <clipPath id="clip0_66_314">
           <rect width="23" height="23" fill="white" />
