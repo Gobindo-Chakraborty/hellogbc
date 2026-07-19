@@ -1,8 +1,8 @@
 "use client";
 
-import Logo from "../icons/Logo";
+import Logo from "@/components/icons/Logo";
 import Link from "next/link";
-import Sun from "../icons/Sun";
+import Sun from "@/components/icons/Sun";
 import { useState } from "react";
 import { usePathname } from "next/navigation";
 

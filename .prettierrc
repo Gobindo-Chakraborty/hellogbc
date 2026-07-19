@@ -1,3 +1,3 @@
 {
-  "plugins-[I-will-remove-it]": ["prettier-plugin-tailwindcss"]
+  "plugins": ["prettier-plugin-tailwindcss"]
 }

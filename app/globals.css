@@ -22,7 +22,7 @@
   --font-inter: var(--font-inter);
 
   /* Breakpoints */
-  --breakpoint-xs: 23rem;
+  --breakpoint-xs: 25rem;
 
   /* WIP - Work In Progress */
   --color-wip-text: hsl(225, 25%, 81%);
