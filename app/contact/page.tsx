@@ -1,10 +1,9 @@
-import WIP from "@/components/ui/WIP";
+import ContactForm from "@/components/pages/contact/ContactForm";
 
 export default function ContactPage() {
   return (
     <>
-      <h1>Contact Page</h1>
-      <WIP />
+      <ContactForm />
     </>
   );
 }
