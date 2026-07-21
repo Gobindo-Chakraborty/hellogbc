@@ -9,7 +9,7 @@ import Ruler from "@/components/ui/Ruler";
 
 export default function Projects() {
   return (
-    <section className="mt-31.25 w-full">
+    <section className="mt-31.25 w-full" id="projects">
       <div className="container mx-auto w-10/12 xl:max-w-286.5">
         <h1 className="text-heading-1 xs:text-[2rem] mb-7.5 text-center text-xl font-bold md:mb-15">
           Real-World Projects

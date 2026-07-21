@@ -24,7 +24,7 @@ import Vitest from "@/components/icons/Vitest";
 
 export default function Skills() {
   return (
-    <section className="mt-12.5">
+    <section className="mt-12.5" id="skills">
       <div className="container mx-auto w-11/12">
         <h1 className="text-heading-1 text-center text-xl font-bold">Skills</h1>
 

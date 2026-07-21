@@ -1,10 +1,11 @@
 "use client";
 
-import Logo from "@/components/icons/Logo";
 import Link from "next/link";
-import Sun from "@/components/icons/Sun";
-import { useState } from "react";
 import { usePathname } from "next/navigation";
+import { useState } from "react";
+
+import Logo from "@/components/icons/Logo";
+import Sun from "@/components/icons/Sun";
 
 export default function Header() {
   const [open, setOpen] = useState(false);
@@ -59,7 +60,7 @@ export default function Header() {
         <ul className="text-secondary-text mt-25 mb-12 flex list-none flex-col items-center gap-10 text-base md:mt-0 md:mb-0 md:flex-row">
           <li className="text-primary-text hover:text-primary-text font-bold transition-colors">
             <Link
-              href="#home"
+              href="/#home"
               onClick={() => {
                 setOpen(false);
               }}
@@ -69,7 +70,7 @@ export default function Header() {
           </li>
           <li className="hover:text-primary-text transition-colors">
             <Link
-              href="#"
+              href="/#projects"
               onClick={() => {
                 setOpen(false);
               }}
@@ -79,7 +80,7 @@ export default function Header() {
           </li>
           <li className="hover:text-primary-text transition-colors">
             <Link
-              href="#"
+              href="/#about"
               onClick={() => {
                 setOpen(false);
               }}
@@ -89,7 +90,7 @@ export default function Header() {
           </li>
           <li className="hover:text-primary-text transition-colors">
             <Link
-              href="#"
+              href="/#skills"
               onClick={() => {
                 setOpen(false);
               }}
