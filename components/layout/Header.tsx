@@ -3,15 +3,20 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
+import { useTheme } from "next-themes";
 
 import Logo from "@/components/icons/Logo";
 import Sun from "@/components/icons/Sun";
+import Moon from "@/components/icons/Moon";
 
 export default function Header() {
   const [open, setOpen] = useState(false);
+
   const pathname = usePathname();
 
   const isContactPage = pathname === "/contact";
+
+  const { resolvedTheme, setTheme } = useTheme();
 
   return (
     <header className="fixed z-100 w-full">
@@ -25,8 +30,15 @@ export default function Header() {
               className="cursor-pointer"
               type="button"
               aria-label="Toggle theme"
+              onClick={() => {
+                setTheme(resolvedTheme === "dark" ? "light" : "dark");
+              }}
             >
-              <Sun className="text-secondary-text xs:h-5 xs:w-5 hover:text-primary-text h-4.25 w-4.25 transition-colors" />
+              {resolvedTheme === "light" ? (
+                <Sun className="text-secondary-text xs:h-5 xs:w-5 hover:text-primary-text h-4.25 w-4.25 transition-colors" />
+              ) : (
+                <Moon className="text-secondary-text xs:h-4 xs:w-4 hover:text-primary-text h-4.25 w-4.25 transition-colors" />
+              )}
             </button>
             <Link
               href={isContactPage ? "/" : "/contact"}
