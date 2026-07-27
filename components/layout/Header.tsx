@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useTheme } from "next-themes";
 
 import Logo from "@/components/icons/Logo";
@@ -11,12 +11,20 @@ import Moon from "@/components/icons/Moon";
 
 export default function Header() {
   const [open, setOpen] = useState(false);
+  const [mounted, setMounted] = useState(false);
 
   const pathname = usePathname();
 
   const isContactPage = pathname === "/contact";
 
   const { resolvedTheme, setTheme } = useTheme();
+
+  useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect
+    setMounted(true);
+  }, []);
+
+  const isLightTheme = mounted ? resolvedTheme === "light" : false;
 
   return (
     <header className="fixed z-100 w-full">
@@ -31,10 +39,12 @@ export default function Header() {
               type="button"
               aria-label="Toggle theme"
               onClick={() => {
-                setTheme(resolvedTheme === "dark" ? "light" : "dark");
+                setTheme(isLightTheme ? "dark" : "light");
               }}
             >
-              {resolvedTheme === "light" ? (
+              {!mounted ? (
+                <span className="xs:h-5 xs:w-5 h-4.25 w-4.25" />
+              ) : isLightTheme ? (
                 <Sun className="text-secondary-text xs:h-5 xs:w-5 hover:text-primary-text h-4.25 w-4.25 transition-colors" />
               ) : (
                 <Moon className="text-secondary-text xs:h-4 xs:w-4 hover:text-primary-text h-4.25 w-4.25 transition-colors" />
