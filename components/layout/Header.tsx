@@ -28,7 +28,7 @@ export default function Header() {
 
   return (
     <header className="fixed z-100 w-full">
-      <div className="bg-secondary-bg relative z-50 w-full">
+      <div className="bg-secondary-bg/60 relative z-50 w-full backdrop-blur-xl">
         <div className="mx-auto flex w-11/12 max-w-316.25 items-center justify-between py-3 md:py-4.5">
           <Link className="" href="/" aria-label="Home">
             <Logo className="xs:w-4.75 h-auto w-4" />
@@ -77,7 +77,7 @@ export default function Header() {
       </div>
 
       <nav
-        className={`bg-secondary-bg/60 border-completion-status absolute top-0 left-0 flex h-auto w-full justify-center border-b ${open ? "translate-y-0 duration-300" : "-translate-y-full duration-600"} z-20 backdrop-blur-xl transition-all ease-out md:fixed md:top-6 md:left-1/2 md:z-70 md:w-fit md:-translate-x-2/3 md:translate-y-0 md:border-0 md:bg-transparent md:backdrop-blur-none md:transition-none min-[52rem]:-translate-x-1/2`}
+        className={`bg-secondary-bg/60 border-completion-status absolute top-0 left-0 flex h-auto w-full justify-center border-b ${open ? "translate-y-0 duration-300" : "-translate-y-full duration-600"} z-20 backdrop-blur-3xl transition-all ease-out md:fixed md:top-6 md:left-1/2 md:z-70 md:w-fit md:-translate-x-2/3 md:translate-y-0 md:border-0 md:bg-transparent md:backdrop-blur-none md:transition-none min-[52rem]:-translate-x-1/2`}
       >
         <ul className="text-secondary-text mt-25 mb-12 flex list-none flex-col items-center gap-10 text-base md:mt-0 md:mb-0 md:flex-row">
           <li className="text-primary-text hover:text-primary-text font-bold transition-colors">
