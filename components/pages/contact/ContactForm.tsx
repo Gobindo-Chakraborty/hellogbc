@@ -1,4 +1,5 @@
 import Ruler from "@/components/ui/Ruler";
+import { sendEmail } from "@/app/actions/send-email";
 
 export default function ContactForm() {
   return (
@@ -9,8 +10,7 @@ export default function ContactForm() {
         </h1>
 
         <form
-          action="https://formspree.io/f/mrennoqj"
-          method="POST"
+          action={sendEmail}
           className="border-secondary-bg-dark-1 mx-auto max-w-241.5 rounded-[30px] border pt-6 pr-5.5 pb-6.5 pl-5.75"
         >
           <p className="text-center">
@@ -54,7 +54,7 @@ export default function ContactForm() {
             </div>
 
             <button
-              className="bg-secondary-bg-dark-1 text-completion-status mt-7.5 w-full rounded-[10px] pt-3 pb-2.75 text-sm leading-[100%] font-semibold"
+              className="bg-secondary-bg-dark-1 text-completion-status mt-7.5 w-full cursor-pointer rounded-[10px] pt-3 pb-2.75 text-sm leading-[100%] font-semibold"
               type="submit"
             >
               Send
