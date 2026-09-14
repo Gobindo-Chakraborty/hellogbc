@@ -6,7 +6,7 @@ import Twitter from "@/components/icons/Twitter";
 
 export default function Footer() {
   return (
-    <footer className="mt-10 flex flex-col items-center gap-5 pb-10">
+    <footer className="mx-auto mt-10 flex w-full max-w-316.25 flex-col items-center gap-5 pb-10 xl:flex-row xl:justify-between">
       <p className="text-secondary-text leading-[100%]">
         &copy; <span className="font-bold">GBC</span> - 2026
       </p>
