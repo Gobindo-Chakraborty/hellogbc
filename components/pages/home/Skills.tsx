@@ -26,11 +26,15 @@ export default function Skills() {
   return (
     <section className="mt-12.5" id="skills">
       <div className="container mx-auto w-11/12">
-        <h1 className="text-heading-1 text-center text-xl font-bold">Skills</h1>
+        <h1 className="text-heading-1 text-center text-xl font-bold xl:pb-7.5 xl:text-[32px]">
+          Skills
+        </h1>
 
         <div className="mt-7.5">
-          <h3 className="text-secondary-text text-center">Frontend</h3>
-          <div className="mt-3.75 flex flex-wrap justify-center gap-x-6.25 gap-y-2.5">
+          <h3 className="text-secondary-text text-center font-light xl:text-2xl">
+            Frontend
+          </h3>
+          <div className="mt-3.75 flex flex-wrap justify-center gap-x-6.25 gap-y-2.5 xl:gap-x-5 xl:gap-y-8">
             <Technology Path={HTML} name="HTML" aria-label="HTML" />
             <Technology Path={CSS} name="CSS" aria-label="CSS" />
             <Technology
@@ -54,8 +58,10 @@ export default function Skills() {
         </div>
 
         <div className="mt-7.5">
-          <h3 className="text-secondary-text text-center">Development Tools</h3>
-          <div className="mt-3.75 flex flex-wrap justify-center gap-x-6.25 gap-y-2.5">
+          <h3 className="text-secondary-text text-center font-light xl:text-2xl">
+            Development Tools
+          </h3>
+          <div className="mt-3.75 flex flex-wrap justify-center gap-x-6.25 gap-y-2.5 xl:gap-x-5 xl:gap-y-8">
             <Technology
               Path={Git}
               name="Git & GitHub"
@@ -67,8 +73,10 @@ export default function Skills() {
         </div>
 
         <div className="mt-7.5">
-          <h3 className="text-secondary-text text-center">Design Tools</h3>
-          <div className="mt-3.75 flex flex-wrap justify-center gap-x-6.25 gap-y-2.5">
+          <h3 className="text-secondary-text text-center font-light xl:text-2xl">
+            Design Tools
+          </h3>
+          <div className="mt-3.75 flex flex-wrap justify-center gap-x-6.25 gap-y-2.5 xl:gap-x-5 xl:gap-y-8">
             <Technology Path={Figma} name="Figma" aria-label="Figma" />
             <Technology
               Path={Photoshop}
@@ -84,8 +92,10 @@ export default function Skills() {
         </div>
 
         <div className="mt-7.5">
-          <h3 className="text-secondary-text text-center">Backend (Basic)</h3>
-          <div className="mt-3.75 flex flex-wrap justify-center gap-x-6.25 gap-y-2.5">
+          <h3 className="text-secondary-text text-center font-light xl:text-2xl">
+            Backend (Basic)
+          </h3>
+          <div className="mt-3.75 flex flex-wrap justify-center gap-x-6.25 gap-y-2.5 xl:gap-x-5 xl:gap-y-8">
             <Technology Path={NodeJS} name="Node.js" aria-label="Node.js" />
             <Technology
               Path={ExpressJS}
@@ -103,8 +113,10 @@ export default function Skills() {
         </div>
 
         <div className="mt-7.5">
-          <h3 className="text-secondary-text text-center">Testing</h3>
-          <div className="mt-3.75 flex flex-wrap justify-center gap-x-6.25 gap-y-2.5">
+          <h3 className="text-secondary-text text-center font-light xl:text-2xl">
+            Testing
+          </h3>
+          <div className="mt-3.75 flex flex-wrap justify-center gap-x-6.25 gap-y-2.5 xl:gap-x-5 xl:gap-y-8">
             <Technology Path={Jest} name="Jest" aria-label="Jest" />
             <Technology Path={Vitest} name="Vitest" aria-label="Vitest" />
           </div>
