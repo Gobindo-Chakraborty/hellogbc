@@ -1,10 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import Providers from "./providers";
 import "./globals.css";
-import Header from "@/components/layout/Header";
-import Footer from "@/components/layout/Footer";
-import BackToTop from "@/components/ui/BackToTop";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -12,7 +8,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "GBC",
+  title: "GBC - Gobindo Chakraborty",
   description:
     "Official portfolio of Gobindo Chakraborty (GBC), a professional web developer and designer creating modern, responsive, and user-friendly websites with JavaScript, React, Next.js, and full-stack web technologies.",
 };
@@ -29,12 +25,7 @@ export default function RootLayout({
       className={`${inter.variable} h-full scroll-smooth antialiased`}
     >
       <body className="font-inter bg-primary-bg text-primary-text flex min-h-full flex-col overflow-x-hidden text-base leading-[150%] font-normal">
-        <Providers>
-          <Header />
-          <main>{children}</main>
-          <Footer />
-          <BackToTop />
-        </Providers>
+        <main>{children}</main>
       </body>
     </html>
   );

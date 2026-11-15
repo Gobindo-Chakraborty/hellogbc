@@ -1,1 +1,1 @@
-## [hellogbc.com](https://hellogbc.com/)
+## [hellogbc.com](https://hellogbc.com)

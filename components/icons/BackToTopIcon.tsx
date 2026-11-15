@@ -10,7 +10,7 @@ export default function BackToTopIcon({ className }: { className: string }) {
     >
       <path
         d="M23.5 12.5L12.5 1.5L1.5 12.5"
-        stroke="#484848"
+        stroke="currentColor"
         strokeWidth="3"
         strokeLinecap="round"
         strokeLinejoin="round"

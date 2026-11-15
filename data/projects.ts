@@ -1,6 +1,4 @@
-import type { ProjectProps } from "@/types/project";
-
-export const projects: ProjectProps[] = [
+export const projects = [
   {
     title: "Isaac Newton",
     type: "Portfolio",
