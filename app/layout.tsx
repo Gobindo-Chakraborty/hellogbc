@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 
 import Header from "@/components/layout/Header";
+import Footer from "@/components/layout/Footer";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -10,7 +11,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Gobindo Chakraborty",
+  title: "GBC - Gobindo Chakraborty",
   description:
     "Official portfolio of Gobindo Chakraborty (GBC), a professional web developer and designer creating modern, responsive, and user-friendly websites with JavaScript, React, Next.js, and full-stack web technologies.",
 };
@@ -29,6 +30,7 @@ export default function RootLayout({
       <body className="font-inter bg-primary-bg text-primary-text flex min-h-full flex-col overflow-x-hidden text-base leading-[150%] font-normal">
         <Header />
         <main>{children}</main>
+        <Footer />
       </body>
     </html>
   );

@@ -23,7 +23,7 @@ export default function Twitter({ className }: { className: string }) {
         <g mask="url(#mask0_37_32)">
           <path
             d="M15.75 0.937012H18.8171L12.1171 8.61415L20 19.0627H13.8286L8.99143 12.727L3.46286 19.0627H0.392857L7.55857 10.8484L0 0.93844H6.32857L10.6943 6.72844L15.75 0.937012ZM14.6714 17.2227H16.3714L5.4 2.6813H3.57714L14.6714 17.2227Z"
-            fill="#7F7F7F"
+            fill="currentColor"
           />
         </g>
       </g>
