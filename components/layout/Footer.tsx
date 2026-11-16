@@ -10,28 +10,57 @@ export default function Footer() {
       <p>
         &copy; <span>GBC</span> - 2026
       </p>
-      <div className="flex items-baseline gap-5">
-        <Link href="https://github.com/Gobindo-Chakraborty" target="_blank">
-          <Github className="" />
-        </Link>
 
-        <Link
-          href="https://www.linkedin.com/in/gobindo-chakraborty"
-          target="_blank"
-        >
-          <Linkedin className="" />
-        </Link>
+      <nav>
+        <ul className="">
+          <li>
+            <a
+              href="https://github.com/Gobindo-Chakraborty"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Github className="" />
+            </a>
+          </li>
 
-        <Link href="https://x.com/hellogbc723" target="_blank">
-          <Twitter className="" />
-        </Link>
-      </div>
-      <div>
-        <Link href="#">Home</Link>
-        <Link href="#">Projects</Link>
-        <Link href="#">About</Link>
-        <Link href="#">Skills</Link>
-      </div>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/gobindo-chakraborty"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Linkedin className="" />
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="https://x.com/hellogbc723"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Twitter className="" />
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <nav>
+        <ul>
+          <li>
+            <Link href="#">Home</Link>
+          </li>
+          <li>
+            <Link href="#">Projects</Link>
+          </li>
+          <li>
+            <Link href="#">About</Link>
+          </li>
+          <li>
+            <Link href="#">Skills</Link>
+          </li>
+        </ul>
+      </nav>
     </footer>
   );
 }
