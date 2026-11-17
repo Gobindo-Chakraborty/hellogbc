@@ -6,6 +6,8 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import BackToTop from "@/components/ui/BackToTop";
 
+import Providers from "./providers";
+
 const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
@@ -29,10 +31,12 @@ export default function RootLayout({
       className={`${inter.variable} h-full scroll-smooth antialiased`}
     >
       <body className="font-inter bg-primary-bg text-primary-text flex min-h-full flex-col overflow-x-hidden text-base leading-[150%] font-normal">
-        <Header />
-        <main>{children}</main>
-        <Footer />
-        <BackToTop />
+        <Providers>
+          <Header />
+          <main>{children}</main>
+          <Footer />
+          <BackToTop />
+        </Providers>
       </body>
     </html>
   );
