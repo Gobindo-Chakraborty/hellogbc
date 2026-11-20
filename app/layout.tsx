@@ -30,7 +30,7 @@ export default function RootLayout({
       lang="en"
       className={`${inter.variable} h-full scroll-smooth antialiased`}
     >
-      <body className="font-inter bg-primary-bg text-primary-text flex min-h-full flex-col overflow-x-hidden text-base leading-[150%] font-normal">
+      <body className="font-inter bg-primary-bg text-primary-text flex min-h-full flex-col overflow-x-hidden text-base font-normal">
         <Providers>
           <Header />
           <main>{children}</main>
