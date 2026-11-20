@@ -95,7 +95,7 @@ export default function Header() {
             </Link>
           </li>
           <li>
-            <Link onClick={() => setOpen(false)} href="/#Skills" className="">
+            <Link onClick={() => setOpen(false)} href="/#skills" className="">
               Skills
             </Link>
           </li>

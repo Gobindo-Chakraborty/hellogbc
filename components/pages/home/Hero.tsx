@@ -10,7 +10,7 @@ import MongoDBCircle from "@/components/icons/MongoDBCircle";
 
 export default function Hero() {
   return (
-    <section className="mt-12.5 pt-12.5">
+    <section className="mt-12.5 pt-12.5" id="home">
       <div>
         <div className="relative mx-auto w-11/12 max-w-307.75">
           <div className="bg-gradient-blur absolute -z-10 mt-[53.87%] h-[67.53%] min-w-full rounded-full blur-[100px]"></div>

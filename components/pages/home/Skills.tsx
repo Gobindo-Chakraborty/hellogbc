@@ -24,7 +24,7 @@ import Vitest from "@/components/icons/Vitest";
 
 export default function Skills() {
   return (
-    <section>
+    <section id="skills">
       <p>Skills</p>
       <h2>Technologies and tools I work with</h2>
       <p>

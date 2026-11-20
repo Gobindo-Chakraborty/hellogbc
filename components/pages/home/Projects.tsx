@@ -4,7 +4,7 @@ import Project from "@/components/ui/Project";
 
 export default function Projects() {
   return (
-    <section>
+    <section id="projects" className="mt-17.5">
       <div>
         <div>
           <p>My Projects</p>
@@ -14,7 +14,7 @@ export default function Projects() {
             helped me improve my skills and grow as a developer.
           </p>
         </div>
-        <Link href="/">
+        <Link href="/projects">
           <span>View All Projects</span>
           <ArrowRight className="" />
         </Link>

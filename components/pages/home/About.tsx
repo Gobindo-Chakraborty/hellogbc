@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function About() {
   return (
-    <section>
+    <section id="about">
       <p>About Me</p>
       <h2>My Journey & Perspective - Unfiltered</h2>
       <p>
