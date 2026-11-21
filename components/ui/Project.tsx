@@ -40,8 +40,8 @@ export default function Project({ limit }: ProjectProps) {
         >
           {project.urlText}
         </Link>
-        <div className="flex items-center gap-7.5">
-          <div className="flex gap-2">
+        <div className="flex items-start gap-7.5">
+          <div className="flex flex-wrap gap-2">
             {project.technologies.map((tech) => {
               return (
                 <span
@@ -53,7 +53,7 @@ export default function Project({ limit }: ProjectProps) {
               );
             })}
           </div>
-          <span className="text-status-text text-[10px] font-bold">
+          <span className="text-status-text shrink-0 pt-1.25 text-[10px] font-bold">
             {project.status}
           </span>
         </div>
