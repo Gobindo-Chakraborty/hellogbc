@@ -18,8 +18,9 @@ export default function Footer() {
                 href="https://github.com/Gobindo-Chakraborty"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="hover:text-light-blue-soft"
               >
-                <Github className="" />
+                <Github className="h-5.5 w-5.5" />
               </a>
             </li>
             <li>
@@ -27,8 +28,9 @@ export default function Footer() {
                 href="https://www.linkedin.com/in/gobindo-chakraborty"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="hover:text-light-blue-soft"
               >
-                <Linkedin className="" />
+                <Linkedin className="h-4 w-4.25" />
               </a>
             </li>
             <li>
@@ -36,8 +38,9 @@ export default function Footer() {
                 href="https://x.com/hellogbc723"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="hover:text-light-blue-soft"
               >
-                <Twitter className="" />
+                <Twitter className="h-4.25 w-4.25" />
               </a>
             </li>
           </ul>
@@ -45,16 +48,24 @@ export default function Footer() {
         <nav className="mt-5">
           <ul className="flex justify-center gap-5 text-[12px]">
             <li>
-              <Link href="#">Home</Link>
+              <Link className="hover:underline" href="#home">
+                Home
+              </Link>
             </li>
             <li>
-              <Link href="#">Projects</Link>
+              <Link className="hover:underline" href="#projects">
+                Projects
+              </Link>
             </li>
             <li>
-              <Link href="#">About</Link>
+              <Link className="hover:underline" href="#about">
+                About
+              </Link>
             </li>
             <li>
-              <Link href="#">Skills</Link>
+              <Link className="hover:underline" href="#skills">
+                Skills
+              </Link>
             </li>
           </ul>
         </nav>
