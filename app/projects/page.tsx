@@ -27,7 +27,7 @@ export default function ProjectPage() {
             <FilterIcon className="text-light-blue h-4 w-4 shrink-0" />
           </button>
 
-          <div className="bg-secondary-bg border-secondary-border absolute right-0 hidden w-max rounded-[10px] border-2 p-3.75 leading-[100%] shadow-[-3px_3px_4px_0px_rgba(9,38,65,0.4)] group-hover:block">
+          <div className="bg-secondary-bg border-secondary-border absolute right-0 hidden w-max rounded-[10px] border-2 p-3.75 leading-[100%] shadow-[-3px_3px_4px_0px_rgba(9,38,65,0.4)] group-focus-within:block group-hover:block">
             <h3 className="text-[14px] font-bold">
               Total ( <span className="text-light-blue">7</span> )
             </h3>
@@ -38,6 +38,7 @@ export default function ProjectPage() {
                 type="checkbox"
                 name="categories"
                 id="categories"
+                defaultChecked
               />
               <span className="ml-1.75">Websites</span> ({" "}
               <span className="text-light-blue">7</span> )

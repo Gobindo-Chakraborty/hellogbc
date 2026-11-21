@@ -1,5 +1,7 @@
 "use client";
 
+import { sendEmail } from "@/app/actions/send-email";
+
 import MailIcon from "@/components/icons/MailIcon";
 import MessageIcon from "@/components/icons/MessageIcon";
 import ProfileIcon from "@/components/icons/ProfileIcon";
@@ -8,7 +10,10 @@ import SendIcon from "@/components/icons/SendIcon";
 export default function ContactForm() {
   return (
     <section className="mx-auto mt-17.5 mb-21.5 w-11/12">
-      <form className="bg-secondary-bg border-bright-light-border rounded-[10px] border px-3.75 pt-5 pb-7.5">
+      <form
+        className="bg-secondary-bg border-bright-light-border rounded-[10px] border px-3.75 pt-5 pb-7.5"
+        action={sendEmail}
+      >
         <div className="flex gap-3.75">
           <SendIcon className="text-light-blue-soft h-6.5 w-6.5 shrink-0" />
           <div className="flex flex-col gap-2.5">
