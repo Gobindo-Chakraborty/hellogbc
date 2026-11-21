@@ -48,22 +48,22 @@ export default function Footer() {
         <nav className="mt-5">
           <ul className="flex justify-center gap-5 text-[12px]">
             <li>
-              <Link className="hover:underline" href="#home">
+              <Link className="hover:underline" href="/#home">
                 Home
               </Link>
             </li>
             <li>
-              <Link className="hover:underline" href="#projects">
+              <Link className="hover:underline" href="/#projects">
                 Projects
               </Link>
             </li>
             <li>
-              <Link className="hover:underline" href="#about">
+              <Link className="hover:underline" href="/#about">
                 About
               </Link>
             </li>
             <li>
-              <Link className="hover:underline" href="#skills">
+              <Link className="hover:underline" href="/#skills">
                 Skills
               </Link>
             </li>

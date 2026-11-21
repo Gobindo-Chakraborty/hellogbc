@@ -3,35 +3,89 @@ import Link from "next/link";
 
 export default function AboutPage() {
   return (
-    <article>
-      <p>About Me</p>
-      <h2>
-        My <Link href="#">Journey</Link> & <Link href="#">Perspective</Link> -
-        Unfiltered
+    <article className="mx-auto mt-12.5 w-11/12 pt-12.5">
+      <p className="text-light-blue text-[13px] uppercase">About Me</p>
+      <h2 className="text-light mt-2.5 text-[15px] leading-[150%] font-bold">
+        My{" "}
+        <Link className="text-light-blue-soft" href="#journey">
+          Journey
+        </Link>{" "}
+        &{" "}
+        <Link className="text-light-blue-soft" href="#perspective">
+          Perspective
+        </Link>{" "}
+        - Unfiltered
       </h2>
-      <section>
-        <ul>
-          <li>Full Name : Gobindo Chakraborty</li>
-          <li>Date Of Birth : 02 March, 2003</li>
-          <li>Nickname : Gobi, GBC</li>
-          <li>Father’s Name : Khetish Chakraborty</li>
-          <li>Mother’s Name : Lakshmi Rani Chakraborty</li>
-          <li>Website : hellogbc.com</li>
-          <li>Education : SSC (10th grade)</li>
-          <li>Nationality : Bangladeshi</li>
+      <section className="mt-10">
+        <ul className="flex flex-col gap-5">
+          <li className="text-primary-text text-[14px] leading-[150%] font-normal">
+            <span className="text-secondary-text font-semibold">
+              Full Name :{" "}
+            </span>
+            Gobindo Chakraborty
+          </li>
+          <li className="text-primary-text text-[14px] leading-[150%] font-normal">
+            <span className="text-secondary-text font-semibold">
+              Date Of Birth :{" "}
+            </span>
+            02 March, 2003
+          </li>
+          <li className="text-primary-text text-[14px] leading-[150%] font-normal">
+            <span className="text-secondary-text font-semibold">
+              Nickname :{" "}
+            </span>
+            Gobi, GBC
+          </li>
+          <li className="text-primary-text text-[14px] leading-[150%] font-normal">
+            <span className="text-secondary-text font-semibold">
+              Father’s Name :{" "}
+            </span>
+            Khetish Chakraborty
+          </li>
+          <li className="text-primary-text text-[14px] leading-[150%] font-normal">
+            <span className="text-secondary-text font-semibold">
+              Mother’s Name :{" "}
+            </span>
+            Lakshmi Rani Chakraborty
+          </li>
+          <li className="text-primary-text text-[14px] leading-[150%] font-normal">
+            <span className="text-secondary-text font-semibold">
+              Website :{" "}
+            </span>
+            hellogbc.com
+          </li>
+          <li className="text-primary-text text-[14px] leading-[150%] font-normal">
+            <span className="text-secondary-text font-semibold">
+              Education :{" "}
+            </span>
+            SSC (10th grade)
+          </li>
+          <li className="text-primary-text text-[14px] leading-[150%] font-normal">
+            <span className="text-secondary-text font-semibold">
+              Nationality :{" "}
+            </span>
+            Bangladeshi
+          </li>
         </ul>
-        <div>
+        <div className="flex flex-col items-center">
           <Image
+            className="border-light-blue mt-10 rounded-[10px] border-2"
             src="/assets/images/gbc-profile-bio.jpg"
             alt="GBC Profile Picture of Biography"
             width={1944}
             height={2592}
           />
-          <p>Height : 5 ft 7 in (170cm)</p>
+          <p className="text-secondary-text mt-2 text-[10px] italic">
+            Height : 5 ft 7 in (170cm)
+          </p>
         </div>
       </section>
-      <section>
-        <h3>My Journey : </h3>
+
+      <section
+        className="text-primary-text mt-10 flex flex-col gap-5 leading-[150%] font-normal"
+        id="journey"
+      >
+        <h3 className="text-light-blue-soft font-bold">My Journey : </h3>
         <p>My journey into web development wasn’t exactly a straight line.</p>
 
         <p>
@@ -129,8 +183,11 @@ export default function AboutPage() {
         <p>That’s a little more about me and how I got here.</p>
       </section>
 
-      <section>
-        <h3>My Perspective : </h3>
+      <section
+        className="text-primary-text mt-20 mb-28.5 flex flex-col gap-5 leading-[150%] font-normal"
+        id="perspective"
+      >
+        <h3 className="text-light-blue-soft font-bold">My Perspective : </h3>
 
         <p>My perspective on life is quite simple.</p>
 
