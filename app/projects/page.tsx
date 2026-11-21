@@ -16,13 +16,47 @@ export default function ProjectPage() {
           </p>
         </div>
 
-        <button
-          type="button"
-          className="absolute top-0 right-0 flex shrink-0 cursor-pointer items-center gap-1.25"
-        >
-          <span className="text-light-blue text-[13px]">Filter Categories</span>
-          <FilterIcon className="text-light-blue h-4 w-4 shrink-0" />
-        </button>
+        <div className="group absolute top-0 right-0 h-max w-max">
+          <button
+            type="button"
+            className="flex shrink-0 cursor-pointer items-center gap-1.25"
+          >
+            <span className="text-light-blue text-[13px]">
+              Filter Categories
+            </span>
+            <FilterIcon className="text-light-blue h-4 w-4 shrink-0" />
+          </button>
+
+          <div className="bg-secondary-bg border-secondary-border absolute right-0 hidden w-max rounded-[10px] border-2 p-3.75 leading-[100%] shadow-[-3px_3px_4px_0px_rgba(9,38,65,0.4)] group-hover:block">
+            <h3 className="text-[14px] font-bold">
+              Total ( <span className="text-light-blue">7</span> )
+            </h3>
+
+            <label className="mt-3.75 ml-3.75 block cursor-pointer text-[14px] font-semibold">
+              <input
+                className="accent-primary-text cursor-pointer"
+                type="checkbox"
+                name="categories"
+                id="categories"
+              />
+              <span className="ml-1.75">Websites</span> ({" "}
+              <span className="text-light-blue">7</span> )
+            </label>
+
+            <div className="mt-3.75 ml-6.25 flex flex-col gap-3.75">
+              <label className="cursor-pointer text-[14px]">
+                <input
+                  className="accent-primary-text cursor-pointer"
+                  type="checkbox"
+                  name="categories"
+                  id="categories"
+                />
+                <span className="ml-1.75">Portfolio</span> ({" "}
+                <span className="text-light-blue">4</span> )
+              </label>
+            </div>
+          </div>
+        </div>
       </div>
 
       <div className="mt-7.5 flex flex-col gap-10">{<Project />}</div>
